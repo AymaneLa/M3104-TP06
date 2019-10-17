@@ -13,8 +13,8 @@
       }
    }
 
-   public function get(string $nom): Music {
-     $reponse=$this->db->query("SELECT * FROM telephone WHERE nom=$nom  ");
+   public function get(int $id): Music {
+     $reponse=$this->db->query("SELECT * FROM telephone WHERE nom=$id  ");
      $donnees=$reponse-> fetchAll(PDO::FETCH_CLASS,"Telephone");
      //var_dump($donnees); Test CHECK :OK !!!!
      $mobile= $donnees[0];
