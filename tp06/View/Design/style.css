@@ -5,3 +5,25 @@ header{
 h1{
   text-align: center;
 }
+
+.Contenu{
+  display: flex;
+
+}
+
+aside{
+  background-color: yellow;
+}
+
+article{
+  background-color: pink;
+}
+
+section{
+  background-color: red;
+}
+
+footer{
+  text-align: center;
+  background-color: blue;
+}
