@@ -1,8 +1,9 @@
 CREATE TABLE telephone (
-  marque TEXT PRIMARY KEY,
-  nom TEXT PRIMARY KEY UNIQUE,
+  marque TEXT,
+  nom TEXT,
   prix REAL,
   description TEXT,
   adresse TEXT,
-  disponibilite TEXT
+  disponibilite TEXT,
+  image TEXT
   );
