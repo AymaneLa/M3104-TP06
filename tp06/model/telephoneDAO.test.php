@@ -6,7 +6,7 @@ require_once('telephoneDAO.class.php');
 $config = parse_ini_file('../config/config.ini');
 
 // Creation de l'instace DAO
-$jukebox = new MusicDAO($config['database_path']);
+$jukebox = new telephoneDAO($config['database_path']);
 
 $m = $jukebox->get(1);
 var_dump($m);

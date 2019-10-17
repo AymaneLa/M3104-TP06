@@ -3,7 +3,7 @@
    private $db;
 
    public function __construct($path){
-     $database = 'sqlite:'.$path.'/muusic.db';
+     $database = 'sqlite:'.$path.'/telephones.db';
       try{
         $this->db= new PDO($database,'','');
       }
