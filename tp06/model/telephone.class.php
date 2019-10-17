@@ -1,6 +1,6 @@
 <?php
 
-class Music {
+class Telephone {
 
   private $marque;
   private $nom;
