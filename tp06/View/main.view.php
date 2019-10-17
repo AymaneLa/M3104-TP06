@@ -13,7 +13,7 @@
 <body>
   <header>
     <h1>MobiFind</h1>
-    <img src="Design/img/logo.png" alt="">
+    <img src="Design/logo.png" alt="">
   </header>
 
   <nav class="Contenu">
