@@ -1,9 +1,11 @@
 <?php
+require_once("../model/telephone.class.php");
+
  class TelephoneDAO{
    private $db;
 
    public function __construct($path){
-     $database = 'sqlite:'.$path.'/muusic.db';
+     $database = 'sqlite:'.$path.'/telephones.db';
       try{
         $this->db= new PDO($database,'','');
       }
@@ -13,10 +15,17 @@
       }
    }
 
-   public function get(int $id): Music {
-     $reponse=$this->db->query("SELECT * FROM telephone WHERE nom=$id  ");
+
+   public function get(int $id): Telephone {
+     $reponse=$this->db->query("SELECT * FROM telephone WHERE id=$id  ");
      $donnees=$reponse-> fetchAll(PDO::FETCH_CLASS,"Telephone");
-     //var_dump($donnees); Test CHECK :OK !!!!
+     if(count($donnees)==0){
+       print("ERREUR: Pas de telephone avec l'id ".$id);
+       exit(1);
+     }
+     if(count($donnees)>1){
+       print("ERREUR: Plusieurs telephones avec l'id ".$id);
+     }
      $mobile= $donnees[0];
      return $mobile;
    }

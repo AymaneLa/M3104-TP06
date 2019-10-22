@@ -2,13 +2,14 @@
 
 class Telephone {
 
+  private $id;
   private $marque;
   private $nom;
   private $prix;
   private $description;
-  private $adress;
+  private $adresse;
   private $disponibilite;
-
+  private $image;
 
   public function getMarque() {
     return $this->marque;
@@ -32,6 +33,10 @@ class Telephone {
 
   public function getDisponibilite() {
     return $this->disponibilite;
+  }
+
+  public function getImage() {
+    return $this->image;
   }
 
 }
