@@ -3,15 +3,15 @@
 $config = parse_ini_file('../config/config.ini');
 
 // Creation de l'instace DAO
-$jukebox = new telephoneDAO($config['database_path']);
+$mobils = new telephoneDAO($config['database_path']);
 
 
 
-for($i=$firstId; $i<554;$i++){
+for($i=$firstId; $i<16;$i++){
     // Récupération de l'objet Music
-    $m = $jukebox->get($i);
+    $m = $mobils->get($i);
     // Ajout à la liste des images à afficher
-    $list[$i] = $config['data_url'].'/img/'.$m->getCover();
+    $list[$i] = $m->getImage();
   }
 
   $view= new View("main.view.php");
