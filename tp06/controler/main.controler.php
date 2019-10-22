@@ -2,6 +2,7 @@
 // Récupération des données de configuration
 $config = parse_ini_file('../config/config.ini');
 
+include("../model/telephoneDAO.class.php");
 // Creation de l'instace DAO
 $mobils = new telephoneDAO($config['database_path']);
 

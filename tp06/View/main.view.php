@@ -23,6 +23,9 @@
 
     <article class="">
       <p>Tous les telephones :</p>
+      <?php foreach ($this->list as $id => $img) {
+        print("<img src=".$img." alt=\"\">");
+      } ?>
       <section>
         <p>Un telephone</p>
       </section>
