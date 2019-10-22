@@ -8,14 +8,14 @@ $mobils = new telephoneDAO($config['database_path']);
 
 
 
-for($i=$firstId; $i<16;$i++){
+for($i=0;$i<16;$i++){
     // Récupération de l'objet Music
     $m = $mobils->get($i);
     // Ajout à la liste des images à afficher
     $list[$i] = $m->getImage();
   }
 
-  $view= new View("main.view.php");
+  $view= new View("../View/main.view.php");
   $view->list=$list;
   $view->show();
 

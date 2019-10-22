@@ -12,7 +12,7 @@
         die("erreur de connexion:".$database."--".$e->getMessage());
       }
    }
-
+   include("telephone.class.php");
    public function get(int $id): Telephone {
      $reponse=$this->db->query("SELECT * FROM telephone WHERE id=$id  ");
      $donnees=$reponse-> fetchAll(PDO::FETCH_CLASS,"Telephone");
