@@ -7,13 +7,13 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="Design/style.css">
+  <link rel="stylesheet" href="../View/Design/style.css">
   <title>MobiFind</title>
 </head>
 <body>
   <header>
     <h1>MobiFind</h1>
-    <img src="Design/logo.png" alt="">
+    <img src="../View/Design/logo.png" alt="">
   </header>
 
   <nav class="Contenu">
