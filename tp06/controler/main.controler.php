@@ -1,4 +1,5 @@
 <?php
+require_once("../framework/view.class.php");
 // Récupération des données de configuration
 $config = parse_ini_file('../config/config.ini');
 
@@ -8,7 +9,7 @@ $mobils = new telephoneDAO($config['database_path']);
 
 
 
-for($i=0;$i<16;$i++){
+for($i=1;$i<17;$i++){
     // Récupération de l'objet Music
     $m = $mobils->get($i);
     // Ajout à la liste des images à afficher

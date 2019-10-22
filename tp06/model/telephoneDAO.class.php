@@ -1,4 +1,6 @@
 <?php
+require_once("../model/telephone.class.php");
+
  class TelephoneDAO{
    private $db;
 
@@ -12,11 +14,18 @@
         die("erreur de connexion:".$database."--".$e->getMessage());
       }
    }
-   include("telephone.class.php");
+
+
    public function get(int $id): Telephone {
      $reponse=$this->db->query("SELECT * FROM telephone WHERE id=$id  ");
      $donnees=$reponse-> fetchAll(PDO::FETCH_CLASS,"Telephone");
-     //var_dump($donnees); Test CHECK :OK !!!!
+     if(count($donnees)==0){
+       print("ERREUR: Pas de telephone avec l'id ".$id);
+       exit(1);
+     }
+     if(count($donnees)>1){
+       print("ERREUR: Plusieurs telephones avec l'id ".$id);
+     }
      $mobile= $donnees[0];
      return $mobile;
    }
