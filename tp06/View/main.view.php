@@ -19,6 +19,9 @@
   <nav class="Contenu">
     <aside class="">
       <p>Tri par categorie</p>
+      <a href="http://www-etu-info.iut2.upmf-grenoble.fr/~bekelen/tp06/tp06/controler/main.controler.php?prix " >
+        <h4>Par prix</h4>
+
     </aside>
 
     <article class="">
