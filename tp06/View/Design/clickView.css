@@ -1,31 +1,7 @@
-body {
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: Arial, sans-serif;
-}
-
-h1 {
-  text-align: center;
-  position: relative;
-}
-
-h2 {
-  margin-top: 150px;
-  text-align: center;
-  position: relative;
-}
-
-h3 {
-  position: relative;
+article {
   text-align: center;
 }
 
-header img {
-  position:absolute;
-  top: 0px;
-}
-
-article img {
-  margin-top: -200px;
+p {
+  width: 250px;
 }

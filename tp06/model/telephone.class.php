@@ -20,7 +20,7 @@ class Telephone {
   }
 
   public function getPrix() {
-    return $this->prix;
+    return ("Prix : ".$this->prix."0€");
   }
 
   public function getDescription() {
@@ -28,11 +28,11 @@ class Telephone {
   }
 
   public function getAdress() {
-    return $this->adresse;
+    return ("Adresse : ".$this->adresse);
   }
 
   public function getDisponibilite() {
-    return $this->disponibilite;
+    return ("Disponibilité : ".$this->disponibilite);
   }
 
   public function getImage() {

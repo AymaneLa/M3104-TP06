@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Informations</title>
-    <link rel="stylesheet" href="Design/clickView.css">
+    <link rel="stylesheet" href="../View/Design/clickView.css">
   </head>
   <body>
 
@@ -17,12 +17,12 @@
 
 
       <?php
-      print("<h2>".$this->mobil->getNom()."</h2>");
+      print("<h2>".$this->mobil->getMarque()." ".$this->mobil->getNom()."</h2>");
+      print("<img src=\"".$this->mobil->getImage()."\" alt=\"\">");
       print("<h3>".$this->mobil->getPrix()."</h3>");
-      print("<p>".$this->mobil->getDescription()."</p>");
+      print("<h3>"."Description : "."</h3>"."<p>".$this->mobil->getDescription()."</p>");
       print("<h3>".$this->mobil->getAdress()."</h3>");
       print("<h3>".$this->mobil->getDisponibilite()."</h3>");
-      print("<img src=\"".$this->mobil->getImage()."\" alt=\"\">");
       ?>
     </article>
   </body>
