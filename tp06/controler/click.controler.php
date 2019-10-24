@@ -1,5 +1,5 @@
 <?php
-require_once("../model/telephone.class.php")
+require_once("../model/telephone.class.php");
 require_once("../framework/view.class.php");
 // Récupération des données de configuration
 $config = parse_ini_file('../config/config.ini');
@@ -20,7 +20,7 @@ include("../model/telephoneDAO.class.php");
     $phone= $mobils->get($id);
   }
 
-  $view= new View("../framework/view.class.php");
+  $view= new View("../View/click.view.php");
   $view->mobil=$phone;
   $view->show();
 ?>

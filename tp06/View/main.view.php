@@ -24,7 +24,7 @@
     <article class="">
       <p>Tous les telephones :</p>
       <?php foreach ($this->list as $id => $img) {
-        print(" <a href=\"http://www-etu-info.iut2.upmf-grenoble.fr/~bekelen/tp06/tp06/controler/click.controler.php?ID=". $this->id."\">" );
+        print(" <a href=\"http://www-etu-info.iut2.upmf-grenoble.fr/~bekelen/tp06/tp06/controler/click.controler.php?ID=". $id."\">" );
         print("<img src=\"".$img."\" alt=\"\">");
         print("</a>");
          }
