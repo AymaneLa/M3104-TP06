@@ -14,10 +14,16 @@ h1 {
   text-align: center;
 }
 
+h3 {
+  margin-top: 2em;
+}
+
 article {
+  margin-top: 5em;
   text-align: center;
 }
 
 p {
-  width: 250px;
+  text-align: center;
+  width: 500px;
 }

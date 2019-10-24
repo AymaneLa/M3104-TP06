@@ -26,22 +26,12 @@
       <?php
       foreach ($this->list as $id) {
 
-        print(" <a href=\"http://www-etu-info.iut2.upmf-grenoble.fr/~bekelen/tp06/tp06/controler/click.controler.php?ID=". $id->getId()."\">" );
+        print(" <a href=\"http://www-etu-info.iut2.upmf-grenoble.fr/~laraicha/ProgWeb/tp06/tp06/controler/click.controler.php?ID=". $id->getId()."\">" );
         ?>
         <img src="<?=$id->getImage() ?>"   alt=""></a>
         <h3><?= $id->getPrix()?> </h3>
 
         <?php  } ?>
-
-
-<<<<<<< HEAD
-=======
-        print(" <a href=\"http://www-etu-info.iut2.upmf-grenoble.fr/~laraicha/ProgWeb/tp06/tp06/controler/click.controler.php?ID=". $id."\">" );
-        print("<img src=\"".$img."\" alt=\"\">");
-        print("</a>");
-         }
-       ?>
->>>>>>> 9804c75fdb37b31e30aa87fa00d0e539e7f4c14c
       <section>
         <p>Un telephone</p>
       </section>
