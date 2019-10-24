@@ -19,7 +19,7 @@
       <h3>Adresse</h3>
       <h3>Disponibilité</h3>
       <img src="../data/images/ONEPLUS 7T Pro.jpeg" alt="">
-      
+
     </article>
   </body>
 </html>
