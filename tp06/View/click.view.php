@@ -9,7 +9,7 @@
 
     <header>
       <h1>MobiFind</h1>
-      <img src="../Design/logo.png" alt="">
+      <img src="../View/Design/logo.png" alt="">
     </header>
 
     <article class="">
