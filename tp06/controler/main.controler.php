@@ -1,3 +1,4 @@
+
 <?php
 require_once("../framework/view.class.php");
 // Récupération des données de configuration
@@ -11,7 +12,7 @@ $mobils = new telephoneDAO($config['database_path']);
 
 for($i=1;$i<17;$i++){
     // Récupération de l'objet Music
-    $m = $mobils->get($i);
+    $m = $mobils->get($i); 
     // Ajout à la liste des images à afficher
     $list[$i] = $m->getImage();
   }
