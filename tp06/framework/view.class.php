@@ -23,7 +23,7 @@ class View {
     // Sauf si on indique le chemin en relatif ou absolue
     if ($p[0] != '.' && $p[0] != '/') {
       // Ajoute le chemin relatif
-      $p = "../view/".$p;
+      $p = "../View/".$p;
     }
 
     // Tous les attributs de l'objet sont dupliqués en des variables

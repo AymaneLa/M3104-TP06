@@ -24,7 +24,7 @@ class Telephone {
   }
 
   public function getDescription() {
-    return $this->adresse;
+    return $this->description;
   }
 
   public function getAdress() {
