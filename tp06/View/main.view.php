@@ -32,14 +32,10 @@
         print(" <a href=\"http://www-etu-info.iut2.upmf-grenoble.fr/~laraicha/ProgWeb/tp06/tp06/controler/click.controler.php?ID=". $id->getId()."\">" );
         ?>
         <img src="<?=$id->getImage() ?>"   alt=""></a>
-        <h3><?= $id->getPrix()?> </h3>
+        <h3><?= $id->getPrix() ?> € </h3>
 
         <?php  } ?>
-<<<<<<< HEAD
-=======
 
-
->>>>>>> 1518b4af2a537be2cb9e6b5d1717e9b7effeddd2
       <section>
         <p>Un telephone</p>
       </section>

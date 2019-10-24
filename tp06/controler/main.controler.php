@@ -23,7 +23,7 @@ $mobils = new telephoneDAO($config['database_path']);
     }
 
 if(isset($_GET['prix'])){
-  for($i=1;$i<17;$i++){
+  for($i=1;$i<17;$i++){  //Tri par bulle
     for($j=1;$j<16;$j++){
       if($list[$j+1]->getPrix()<$list[$j]->getPrix()){
         $a=new Telephone();
