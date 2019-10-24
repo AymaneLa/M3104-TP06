@@ -24,17 +24,12 @@
     <article class="">
       <p>Tous les telephones :</p>
       <?php foreach ($this->list as $id => $img) {
-<<<<<<< HEAD
-        print("<img src=\"".$img."\" alt=\"\">");  
-      } ?>
 
-=======
         print(" <a href=\"http://www-etu-info.iut2.upmf-grenoble.fr/~bekelen/tp06/tp06/controler/click.controler.php?ID=". $id."\">" );
         print("<img src=\"".$img."\" alt=\"\">");
         print("</a>");
          }
        ?>
->>>>>>> 559c6b33a07c5232ddd7a727a04f3c1a10e7db03
       <section>
         <p>Un telephone</p>
       </section>
