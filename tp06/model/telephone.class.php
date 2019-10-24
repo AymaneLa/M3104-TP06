@@ -11,6 +11,10 @@ class Telephone {
   private $disponibilite;
   private $image;
 
+  public function getId() {
+    return $this->id;
+  }
+
   public function getMarque() {
     return $this->marque;
       }

@@ -23,13 +23,16 @@
 
     <article class="">
       <p>Tous les telephones :</p>
-      <?php foreach ($this->list as $id => $img) {
+      <?php
+      foreach ($this->list as $id) {
 
-        print(" <a href=\"http://www-etu-info.iut2.upmf-grenoble.fr/~bekelen/tp06/tp06/controler/click.controler.php?ID=". $id."\">" );
+        print(" <a href=\"http://www-etu-info.iut2.upmf-grenoble.fr/~bekelen/tp06/tp06/controler/click.controler.php?ID=". $id->getId()."\">" );
         ?>
-        <img src="<?=$img ?>"   alt=""></a>
-        <?php } ?>
-         
+        <img src="<?=$id->getImage() ?>"   alt=""></a>
+        <h3><?= $id->getPrix()?> </h3>
+
+        <?php  } ?>
+
 
       <section>
         <p>Un telephone</p>
