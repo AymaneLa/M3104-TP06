@@ -15,6 +15,9 @@
   <nav class="Contenu">
     <aside class="">
       <p>Tri par categorie</p>
+      <a href="http://www-etu-info.iut2.upmf-grenoble.fr/~bekelen/tp06/tp06/controler/main.controler.php?prix " >
+        <h4>Par prix</h4>
+
     </aside>
 
     <article class="">
@@ -24,6 +27,7 @@
 
         print(" <a href=\"http://www-etu-info.iut2.upmf-grenoble.fr/~laraicha/ProgWeb/tp06/tp06/controler/click.controler.php?ID=". $id->getId()."\">" );
         ?>
+<<<<<<< HEAD
         <div class="">
           <h2>"<?=$id->getMarque()?>"</h2>
           <img src="<?=$id->getImage() ?>"   alt=""></a>
@@ -32,6 +36,13 @@
 
 
         <?php  } ?>
+=======
+        <img src="<?=$id->getImage() ?>"   alt=""></a>
+        <h3><?= $id->getPrix() ?> € </h3>
+
+        <?php  } ?>
+
+>>>>>>> 1f28d7335920b397cd658c9c91f8f79ca8b4f19b
       <section>
         <p>Un telephone</p>
       </section>
