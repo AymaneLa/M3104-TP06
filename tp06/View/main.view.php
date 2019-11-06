@@ -15,8 +15,8 @@
   <nav class="Contenu">
     <aside class="">
       <p>Tri par categorie</p>
-       <a href="http://www-etu-info.iut2.upmf-grenoble.fr/~bekelen/tp06/tp06/controler/main.controler.php?prix"> Par prix </a>
-
+      <a href="http://www-etu-info.iut2.upmf-grenoble.fr/~laraicha/ProgWeb/tp06/tp06/controler/main.controler.php?prix">
+        <h4>Par prix</h4>
 
     </aside>
 
@@ -29,7 +29,7 @@
         <div class="Images">
           <h2><?=$id->getMarque()?> <?=$id->getNom()?></h2>
           <img src="<?=$id->getImage() ?>"   alt=""></a>
-          <h3><?=$id->getPrix()?>0€</h3>
+          <h3>Prix : <?=$id->getPrix()?>0€</h3>
         </div>
 
 
