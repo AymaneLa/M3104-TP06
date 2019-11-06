@@ -20,11 +20,12 @@ a:link{
 
 
 .Images{
-  text-align: center;
+  text-align: center
 }
 
 article {
-
+  display: flex;
+  flex-wrap: wrap;
 }
 
 footer{
