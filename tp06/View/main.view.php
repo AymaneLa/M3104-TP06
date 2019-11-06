@@ -35,12 +35,6 @@
 
         <?php  } ?>
 
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> d8b93330b380ac6b1ce169c3ddaea5c8f207a889
 
     </nav>
     </article>
