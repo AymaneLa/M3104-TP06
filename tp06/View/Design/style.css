@@ -20,7 +20,8 @@ a:link{
 
 
 .Images{
-  text-align: center
+  text-align: center;
+  margin-left: 30px;
 }
 
 article {
