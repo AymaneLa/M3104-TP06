@@ -35,10 +35,6 @@
 
         <?php  } ?>
 
-      <section>
-        <p>Un telephone</p>
-      </section>
-
 
     </nav>
     </article>
