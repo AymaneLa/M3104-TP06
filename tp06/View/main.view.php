@@ -21,16 +21,15 @@
     </aside>
 
     <article class="">
-      <p>Tous les telephones :</p>
       <?php
       foreach ($this->list as $id) {
 
         print(" <a href=\"http://www-etu-info.iut2.upmf-grenoble.fr/~laraicha/ProgWeb/tp06/tp06/controler/click.controler.php?ID=". $id->getId()."\">" );
         ?>
-        <div class="">
-          <h2><?=$id->getMarque()?>   <?=$id->getNom()?></h2>
+        <div class="Images">
+          <h2><?=$id->getMarque()?> <?=$id->getNom()?></h2>
           <img src="<?=$id->getImage() ?>"   alt=""></a>
-          <h3><?= $id->getPrix()?>0 € </h3>
+          <h3><?=$id->getPrix()?>0€</h3>
         </div>
 
 

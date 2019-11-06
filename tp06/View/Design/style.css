@@ -14,12 +14,17 @@ h1{
   text-align: center;
 }
 
-.Contenu{
-  display: flex;
+a:link{
+  text-decoration:none
+}
+
+
+.Images{
+  text-align: center;
 }
 
 article {
-  display: flex;
+
 }
 
 footer{
