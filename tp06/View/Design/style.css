@@ -32,8 +32,21 @@ article {
 aside {
   margin-top: 100px;
   margin-left: 30px;
+  flex-direction: row;
 }
 
 footer{
   text-align: center;
+}
+
+.divv{
+  margin-right: 1350px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.Marque.div {
+  display: flex;
+  flex-wrap: wrap;
 }

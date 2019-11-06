@@ -21,21 +21,36 @@ $mobils = new telephoneDAO($config['database_path']);
       // Ajout à la liste des images à afficher
       $list[$i] = $m;
     }
-
+//---------------------------------------------Tri par marque-------------------------------------//
 if(isset($_GET['prix'])){
-  for($i=1;$i<17;$i++){  //Tri par bulle
-    for($j=1;$j<16;$j++){
-      if($list[$j+1]->getPrix()<$list[$j]->getPrix()){
-        $a=new Telephone();
-        $a=$list[$j];
-        $list[$j]=$list[$j+1];
-        $list[$j+1]=$a;
+  $string=$_GET['prix'];
+  if(strcmp($string,"croissant") == 0){
+    for($i=1;$i<17;$i++){  //Tri par bulle croissant
+      for($j=1;$j<16;$j++){
+        if($list[$j+1]->getPrix()<$list[$j]->getPrix()){
+          $a=new Telephone();
+          $a=$list[$j];
+          $list[$j]=$list[$j+1];
+          $list[$j+1]=$a;
+        }
+
       }
     }
+  } elseif (strcmp($string,"decroissant") == 0) {
+      for($i=1;$i<17;$i++){  //Tri par bulle décroissant
+        for($j=1;$j<16;$j++){
+          if($list[$j+1]->getPrix()>$list[$j]->getPrix()){
+            $a=new Telephone();
+            $a=$list[$j];
+            $list[$j]=$list[$j+1];
+            $list[$j+1]=$a;
+          }
+        }
+      }
+
   }
-
-
 }
+//---------------------------------------------------------------------------------------------------//
 
 
   $view= new View("../View/main.view.php");
