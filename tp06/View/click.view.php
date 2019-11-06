@@ -21,8 +21,8 @@
       print("<img src=\"".$this->mobil->getImage()."\" alt=\"\">");
       print("<h3>".$this->mobil->getPrix()."</h3>");
       print("<h3>Description : "."</h3>"."<p>".$this->mobil->getDescription()."</p>");
-      print("<h3>".$this->mobil->getAdress()."</h3>");
-      print("<h3>".$this->mobil->getDisponibilite()."</h3>");
+      print("<h3>Adresse : "."</h3>".$this->mobil->getAdress()."</h3>");
+      print("<h3>Dispoibilité : "."</h3>".$this->mobil->getDisponibilite()."</h3>");
       ?>
     </article>
   </body>
