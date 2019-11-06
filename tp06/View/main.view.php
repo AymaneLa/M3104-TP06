@@ -34,7 +34,15 @@
 
 
         <?php  } ?>
+
+      <section>
+        <p>Un telephone</p>
+      </section>
+
+
+    </nav>
     </article>
-  <footer> <p>Copyright</p> </footer>
+
+
 </body>
 </html>
