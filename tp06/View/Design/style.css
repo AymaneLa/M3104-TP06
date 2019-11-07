@@ -5,19 +5,49 @@ body {
   font-family: Arial, sans-serif;
 }
 
+/* -------------------------------------Header-----------------------*/
+
 header img {
   position:absolute;
   top: 0px;
 }
 
-h1{
+/* --------------------------------------------------------------------*/
+
+
+/* -------------------------------------Menu navigation-----------------------*/
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #383838;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
   text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-a:link{
-  text-decoration:none
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #4CAF50;
 }
 
+li.dropdown {
+  display: inline-block;
+}
+/* -------------------------------------------------------------------------------------*/
+
+/* -------------------------------------Affichage des téléphones -----------------------*/
 
 .Images{
   text-align: center;
@@ -29,24 +59,26 @@ article {
   flex-wrap: wrap;
 }
 
-aside {
-  margin-top: 100px;
-  margin-left: 30px;
+.Article {
+  display: flex;
   flex-direction: row;
 }
 
+h3 {
+  color: white;
+}
+
+aside {
+  margin-top: 100px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: row;
+
+}
+/* ---------------------------------------------------------------------------*/
+
+/*-----------------------------Footer-----------------------------------------*/
 footer{
   text-align: center;
 }
-
-.divv{
-  margin-right: 1350px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.Marque.div {
-  display: flex;
-  flex-wrap: wrap;
-}
+/*----------------------------------------------------------------------------*/

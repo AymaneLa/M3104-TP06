@@ -8,58 +8,56 @@
 </head>
 <body>
   <header>
-    <h1>MobiFind</h1>
+    <h1>-</h1>
     <img src="../View/Design/logo.png" alt="">
   </header>
 
-  <nav class="Contenu">
-    <aside class="flex-aside">
-      <h2>Tri par catégorie</h2>
-      <div class=" divv">
 
+<!--/////////////////////////// Bar de navigation avec les options de trix /////////////////////////////////////              -->
 
-      <section>
+<aside class="flex-aside">
+<ul>
+  <li class="dropdown">
+    <h3> Par marque </h3>
+    <div class="dropdown-content7">
 
-        <h4>- Par prix</h4>
+    <a href="http://www-etu-info.iut2.upmf-grenoble.fr/~bekelen/tp06/tp06/controler/main.controler.php?prix=croissant">
+      Croissant -- ++    <!-- Lien vers le main controller qui fera l'affichage croissante -->
+    </a>
 
+    <a href="http://www-etu-info.iut2.upmf-grenoble.fr/~bekelen/tp06/tp06/controler/main.controler.php?prix=decroissant">
+      Deroissant ++ --  <!-- Lien vers le main controller qui fera l'affichage décroissante -->
+    </a>
 
-        <a href="http://www-etu-info.iut2.upmf-grenoble.fr/~bekelen/tp06/tp06/controler/main.controler.php?prix=croissant">
-           <h5> + Croissant </h5>
-        </a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <h3> Par marque </h3>
+  <div class="dropdown-content2">
 
-        <a href="http://www-etu-info.iut2.upmf-grenoble.fr/~bekelen/tp06/tp06/controler/main.controler.php?prix=decroissant">
-           <h5> - Decroissant </h5>
-        </a>
+    <a href="http://www-etu-info.iut2.upmf-grenoble.fr/~bekelen/tp06/tp06/controler/main.controler.php?marque=Apple">
+      Apple
+    </a>
+    <a href="http://www-etu-info.iut2.upmf-grenoble.fr/~bekelen/tp06/tp06/controler/main.controler.php?marque=Samsung">
+      Samsung
+    </a>
+    <a href="http://www-etu-info.iut2.upmf-grenoble.fr/~bekelen/tp06/tp06/controler/main.controler.php?marque=Xiaomi">
+      Xiaomi
+    </a>
+    <a href="http://www-etu-info.iut2.upmf-grenoble.fr/~bekelen/tp06/tp06/controler/main.controler.php?marque=Huawei">
+      Huawei
+    </a>
+    <a href="http://www-etu-info.iut2.upmf-grenoble.fr/~bekelen/tp06/tp06/controler/main.controler.php?marque=OnePlus">
+      OnePlus
+    </a>
+  </li>
+ </div>
+</ul>
+</aside>
+​<!--////////////////////////////////////////////////////////////////////////////////              -->
 
-    </section>
+<!--/////////////////////////// Affichage de tous les téléphones  /////////////////////////////////////              -->
 
-      <section class="Marque">
-      <div class="erd">
-        <h4> -Par marque </h4>
-      <a href="http://www-etu-info.iut2.upmf-grenoble.fr/~bekelen/tp06/tp06/controler/main.controler.php?marque=Apple">
-        <h5> Apple </h5>
-      </a>
-
-      <a href="http://www-etu-info.iut2.upmf-grenoble.fr/~bekelen/tp06/tp06/controler/main.controler.php?marque=Samsung">
-        <h5> Samsung </h5>
-      </a>
-
-      <a href="http://www-etu-info.iut2.upmf-grenoble.fr/~bekelen/tp06/tp06/controler/main.controler.php?marque=Xiaomi">
-        <h5> Xiaomi </h5>
-      </a>
-
-      <a href="http://www-etu-info.iut2.upmf-grenoble.fr/~bekelen/tp06/tp06/controler/main.controler.php?marque=Samsung">
-        <h5> Samsung </h5>
-      </a>
-
-      <a href="http://www-etu-info.iut2.upmf-grenoble.fr/~bekelen/tp06/tp06/controler/main.controler.php?marque=OnePlus">
-        <h5> OnePlus </h5>
-        </a>
-
-  </div>
-    </section>
-
-    </aside>
 
     <article class="">
       <?php
@@ -76,10 +74,8 @@
 
         <?php  } ?>
 
+<!--////////////////////////////////////////////////////////////////////                                      -->
 
-    </nav>
-    </article>
-
-
-</body>
+  </article>
+ </body>
 </html>

@@ -9,5 +9,4 @@ $config = parse_ini_file('../config/config.ini');
 $jukebox = new telephoneDAO($config['database_path']);
 
 $m = $jukebox->get(1);
-var_dump($m);
 ?>

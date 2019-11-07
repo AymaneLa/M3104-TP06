@@ -31,7 +31,6 @@ require_once("../model/telephone.class.php");
    }
 }
 
-//print($DB[0]->getTitre());
 
 
 
